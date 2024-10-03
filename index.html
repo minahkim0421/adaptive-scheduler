@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptive Schedule Planner v.1</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- FullCalendar Library -->
+     <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <!-- <header>
+            <h1>My Schedule Planner</h1>
+        </header> -->
+
+        <!-- Sidebar Menu for Navigation -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#" id="to-do-link">To-Do List</a></li>
+                <li><a href="#" id="calendar-link">Calendar</a></li>
+            </ul>
+        </nav>
+
+        <!-- To-Do List Section -->
+        <section id="to-do-list-page" class="content active">
+            <h2>To-Do List</h2>
+            <ul id="to-do-list"></ul>
+            <form id="schedule-form">
+                <label for="task-name">Task/Appointment Name:</label>
+                <input type="text" id="task-name" name="task-name" required>
+
+                <label for="task-date">Date:</label>
+                <input type="date" id="task-date" name="task-date" required>
+
+                <label for="task-time">Time:</label>
+                <input type="time" id="task-time" name="task-time" required>
+
+                <label for="task-priority">Priority:</label>
+                <select id="task-priority" name="task-priority">
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button type="submit">Add Task</button>
+            </form>
+        </section>
+
+        <!-- Calendar Section -->
+        <section id="calendar-page" class="content">
+            <h2>Calendar</h2>
+            <div id="calendar"></div>
+        </section>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
