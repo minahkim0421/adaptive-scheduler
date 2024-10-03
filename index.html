@@ -23,6 +23,8 @@
             <ul>
                 <li><a href="#" id="to-do-link">To-Do List</a></li>
                 <li><a href="#" id="calendar-link">Calendar</a></li>
+                <li><a href="#" id="done-list-link">Done</a></li> 
+                <li><a href="#" id="grid-view-link">Grid View</a></li>
             </ul>
         </nav>
 
@@ -36,9 +38,6 @@
 
                 <label for="task-date">Date:</label>
                 <input type="date" id="task-date" name="task-date" required>
-
-                <!-- <label for="task-time">Time:</label>
-                <input type="time" id="task-time" name="task-time" required> -->
 
                 <label for="task-priority">Priority:</label>
                 <select id="task-priority" name="task-priority">
@@ -55,6 +54,22 @@
         <section id="calendar-page" class="content">
             <h2>Calendar</h2>
             <div id="calendar"></div>
+        </section>
+
+        <!-- Done List -->
+         <section id="done-list-section" class="content"> <!-- Done Section initially hidden -->
+            <h2>Done</h2>
+            <ul id="done-list"></ul>
+        </section>
+
+          <!-- Grid View Section -->
+          <section id="grid-view-page" class="content">
+            <h2>Task Grid View</h2>
+             <!-- Axis Labels and Grid Container -->
+
+        <div id="task-grid" class="task-grid">
+            <!-- The quadrant grid will be displayed here -->
+        </div>
         </section>
 
     </div>
